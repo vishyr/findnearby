@@ -64,11 +64,11 @@ public class FindNearby {
 							System.out.println(outpuMapper.writerWithDefaultPrettyPrinter().writeValueAsString(poi));
 						}
 					} else {
-						log.info("No points of interest!");
+						log.info("No points of interest found!");
 					}
 				}
 			} else { 
-				log.info("No cities to process!");
+				log.info("No cities found!");
 			}
 			log.info("Done!");
 		} catch (RateLimitException rle) {
