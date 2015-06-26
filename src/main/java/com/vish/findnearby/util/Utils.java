@@ -77,7 +77,7 @@ public class Utils {
 	 */
 	public static List<City> getCityList(String cityListUrl) throws RateLimitException {
 		String xmlResponse = null;
-		List<City> cityList = new ArrayList<>();
+		List<City> cityList = new ArrayList<City>();
 
 		try {
 			xmlResponse = Utils.getHttpResponse(cityListUrl);
