@@ -27,11 +27,9 @@ The username I have used is "foobar" because the given username "demo" gets rate
 
 Sample Output
 -------------
-2015-06-25 18:45:33 INFO  FindNearby:42 - Getting city list for input paris
-
-2015-06-25 18:45:35 INFO  FindNearby:54 - For the city of Paris-Gare de Lyon, we have the following nearby points of interest
-
 ```json
+2015-06-25 18:45:33 INFO  FindNearby:42 - Getting city list for input paris
+2015-06-25 18:45:35 INFO  FindNearby:54 - For the city of Paris-Gare de Lyon, we have the following nearby points of interest
 {
   "countryCode" : "FR",
   "lang" : "en",
