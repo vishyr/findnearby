@@ -1,6 +1,8 @@
 # findnearby
 Finds cities matching the name provided and also get points of interests nearby
 
+Instructions to download, build and run
+------------
 Clone the repo
 
 $git clone https://github.com/vishyr/findnearby.git
