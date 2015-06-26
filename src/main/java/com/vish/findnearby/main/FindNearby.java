@@ -26,7 +26,7 @@ public class FindNearby {
 	private static final String CITY_LIST_URI = "http://api.geonames.org/wikipediaSearch";
 	private static final String NEARBY_URI = "http://api.geonames.org/findNearbyJSON";
 	private static final String USERNAME = "foobar";
-
+    private static final String MAX_ROWS = "10";
 
 	private static Log log = LogFactory.getLog(FindNearby.class);
 
@@ -41,7 +41,7 @@ public class FindNearby {
 		String inputCity = args[0].trim();		
 		log.info("Getting city list for input " + inputCity);
 		try {			
-			String cityListUrl = CITY_LIST_URI + "?q=" + inputCity + "&maxRows=10&username=" + USERNAME + "&style=full";			
+			String cityListUrl = CITY_LIST_URI + "?q=" + inputCity + "&maxRows=" + MAX_ROWS + "&username=" + USERNAME + "&style=full";			
 			// get city list
 			List<City> cityList = Utils.getCityList(cityListUrl);	
 			if (!cityList.isEmpty()) {
@@ -74,10 +74,10 @@ public class FindNearby {
 		} catch (RateLimitException rle) {
 			log.error(rle.getMessage());
 			rle.printStackTrace();
-		} catch (JsonProcessingException e) {
+		} catch (JsonProcessingException jpe) {
 			log.error("Error processing json");
-			e.printStackTrace();
-		}
+			jpe.printStackTrace();
+		} 
 	}
 
 	/**
