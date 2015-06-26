@@ -1,5 +1,5 @@
 # findnearby
-Finds cities matching the name provided and also gets points of interests nearby
+Finds cities matching the name provided and also get points of interests nearby
 
 To build issue command
 
