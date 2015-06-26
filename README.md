@@ -1,6 +1,10 @@
 # findnearby
 Finds cities matching the name provided and also get points of interests nearby
 
+Clone the project
+
+$git clone https://github.com/vishyr/findnearby.git
+
 To build, issue command
 
 $cd findnearby
